@@ -812,3 +812,17 @@ body {
   width: 100%;
   height: 100%;
 }
+
+@media (min-width: 52.125rem) {
+  .header {
+    background-image: none;
+    background-color: red;
+  }
+}
+
+@media (min-width: 90rem) {
+  .header {
+    background-image: none;
+    background-color: yellow;
+  }
+}
