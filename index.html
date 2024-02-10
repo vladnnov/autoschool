@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Автошкола Семёновец</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sintony:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script defer src="swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <a href="#"
+          ><img
+            class="header-logo"
+            src="img/logo.svg"
+            alt="Логотип автошколы Семёновец"
+        /></a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li><a href="#">Стоимость</a></li>
+            <li><a href="#">Записаться в автошколу</a></li>
+            <li><a href="#">Инструкторы</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header-nav-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="header-nav-button-icon header-nav-button-icon--open"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="header-nav-button-icon header-nav-button-icon--close"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <h1 class="header-heading">
+        Уверенность, навыки, безопасность - всё в одной автошколе!
+      </h1>
+      <button class="header-cta-button">Записаться в автошколу</button>
+      <img class="header-img" src="img/auto.png" alt="Автомобиль Пежо" />
+    </header>
+
+    <main>
+      <section class="section-features">
+        <ul class="section-features-list">
+          <li class="section-features-list-item">
+            <img
+              class="section-features-icon"
+              src="img/icon1.png"
+              alt="Иконка с людьми"
+            />
+            <p class="section-features-text">Профессиональные инструкторы</p>
+          </li>
+          <li class="section-features-list-item">
+            <img
+              class="section-features-icon"
+              src="img/icon2.png"
+              alt="Иконка с календарем"
+            />
+            <p class="section-features-text">Гибкий график обучения</p>
+          </li>
+          <li class="section-features-list-item">
+            <img
+              class="section-features-icon"
+              src="img/icon3.png"
+              alt="Иконка с документами"
+            />
+            <p class="section-features-text">Государественная аккредитация</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-team">
+        <h2 class="section-team-heading">Наша команда</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper swiper-1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                class="section-team-slider-item-img"
+                src="img/mob-vera.png"
+                alt="Вера Андреевна"
+              />
+              <div class="section-team-slider-item-content">
+                <svg
+                  viewBox="0 0 313 90"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="section-team-slider-deco"
+                >
+                  <path
+                    d="M2.00001 90C0.895437 90 0 89.1046 0 88V0C44.7143 23.8725 178.857 11.9362 313 0V88C313 89.1046 312.105 90 311 90H2.00001Z"
+                    fill="white"
+                    fill-opacity="0.92"
+                  />
+                </svg>
+                <p class="section-team-slider-item-name">Вера Андреевна</p>
+                <p class="section-team-slider-item-job">Директор</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="section-team-slider-item-img"
+                src="img/mob-aleksandr.png"
+                alt="Александр Евгеньевич"
+              />
+              <div class="section-team-slider-item-content">
+                <svg
+                  viewBox="0 0 313 90"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="section-team-slider-deco"
+                >
+                  <path
+                    d="M2.00001 90C0.895437 90 0 89.1046 0 88V0C44.7143 23.8725 178.857 11.9362 313 0V88C313 89.1046 312.105 90 311 90H2.00001Z"
+                    fill="white"
+                    fill-opacity="0.92"
+                  />
+                </svg>
+                <p class="section-team-slider-item-name">
+                  Александр Евгеньевич
+                </p>
+                <p class="section-team-slider-item-job">Преподаватель ПДД</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="section-team-slider-item-img"
+                src="img/mob-evgenia.png"
+                alt="Евгения Григорьевна"
+              />
+              <div class="section-team-slider-item-content">
+                <svg
+                  viewBox="0 0 313 90"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="section-team-slider-deco"
+                >
+                  <path
+                    d="M2.00001 90C0.895437 90 0 89.1046 0 88V0C44.7143 23.8725 178.857 11.9362 313 0V88C313 89.1046 312.105 90 311 90H2.00001Z"
+                    fill="white"
+                    fill-opacity="0.92"
+                  />
+                </svg>
+                <p class="section-team-slider-item-name">Евгения Григорьевна</p>
+                <p class="section-team-slider-item-job">
+                  Преподаватель “Медицины”
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+
+          <!-- If we need navigation buttons -->
+          <div style="display: none" class="swiper-button-prev"></div>
+          <div style="display: none" class="swiper-button-next"></div>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-1"></div>
+      </section>
+
+      <section class="section-pricing">
+        <h2 class="section-pricing-heading">Стоимость услуг</h2>
+
+        <ul class="section-pricing-list">
+          <li class="section-pricing-list-item">
+            <p>
+              Профессиональная подготовка водителей траспортных средств
+              категории В
+            </p>
+            <p>
+              <span class="section-pricing-price">20 000 руб</span> - МКПП без
+              учета ГСМ*
+            </p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p>
+              Профессиональная подготовка водителей траспортных средств
+              категории В
+            </p>
+            <p class="section-pricing-small-text">
+              *льготная стоимость для студентов, учащихся, детей и родителей
+              мнгодетных семей
+            </p>
+            <p>
+              <span class="section-pricing-price">18 000 руб</span> - МКПП без
+              учета ГСМ*
+            </p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p>
+              Оплата ГСМ производится учащимися непосредственно перед
+              практическим занятием на АЗС
+            </p>
+            <p>
+              <span class="section-pricing-price">400 руб</span> за одно
+              практическое занятие
+            </p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p class="section-pricing-subheading">
+              Дополнительные платные услуги для курсантов ЧПОУ Автошкола
+              Семеновец*
+            </p>
+            <p>Пересдача квалификационного экзамена</p>
+            <p><span class="section-pricing-price">1000 руб</span></p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p>Дополнительный урок вождения</p>
+            <p><span class="section-pricing-price">500 руб/час</span></p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p class="section-pricing-subheading">
+              Дополнительные платные услуги для курсантов, прибывших из других
+              автошкол*
+            </p>
+            <p>
+              Прием теоритического экзамена (допуск, к практическим занятиям, на
+              учебном автомобиле учреждения, в условиях реального дорожного
+              движения)
+            </p>
+            <p><span class="section-pricing-price">500 руб</span></p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p>Дополнительное занятие по ПДД</p>
+            <p><span class="section-pricing-price">500 руб/час</span></p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p>
+              Комплекс практических занятий, на учебном автомобиле учреждения, в
+              условиях реального дорожного движения
+            </p>
+            <p><span class="section-pricing-price">10 000 руб/5 часов</span></p>
+          </li>
+          <li class="section-pricing-list-item">
+            <p>Организация квалификационного экзамена в ГИБДД</p>
+            <p><span class="section-pricing-price">2000 руб</span></p>
+          </li>
+        </ul>
+
+        <p class="section-pricing-extra-info">
+          <span class="section-pricing-asterix">*</span>Оплата производится до
+          предоставления сведений в ГИБДД, о кандидатах в водители, включенных в
+          состав организованной группы, сведения предоставляются 3 рабочих дня
+          до даты экзамена.
+        </p>
+      </section>
+
+      <section class="section-cta">
+        <p class="section-cta-text">
+          Рассрочка от автошколы<br />
+          до 3 месяцев
+        </p>
+        <p class="section-cta-text">
+          Первый взнос ОТ
+          <span class="section-cta-em-text"
+            >5000 руб<br />
+            0%</span
+          >
+          переплаты
+        </p>
+
+        <button class="section-cta-button">Записаться в автошколу</button>
+
+        <p class="section-cta-undertext">Идёт постоянный набор в группы</p>
+
+        <img
+          class="section-cta-img"
+          src="img/girl.png"
+          alt="Девушка с банковской картой и телефоном в руках"
+        />
+      </section>
+
+      <section class="section-testimonials">
+        <h2 class="section-testimonials-heading">Отзывы наших учеников</h2>
+
+        <div class="swiper swiper-2">
+          <div class="swiper-wrapper swiper-wrapper-2">
+            <div class="swiper-slide">
+              <img
+                class="section-testimonials-slider-img"
+                src="img/testimonial1.png"
+                alt="Отзыв ученика автошколы"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="section-testimonials-slider-img"
+                src="img/testimonial1.png"
+                alt="Отзыв ученика автошколы"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="section-testimonials-slider-img"
+                src="img/testimonial1.png"
+                alt="Отзыв ученика автошколы"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-2"></div>
+      </section>
+
+      <section class="section-contacts">
+        <h2 class="section-contacts-heading">Контакты</h2>
+        <ul class="section-contacts-tels">
+          <li class="section-contacts-tel">
+            <a href="tel:+79040428174">+7 904 042 81 74</a>
+          </li>
+          <li class="section-contacts-tel">
+            <a href="tel:+79108766368">+7 910 876 63 68</a>
+          </li>
+        </ul>
+        <a
+          class="section-contacts-mail"
+          href="mailto:avtoshkola.semenovec@mail.ru"
+          >avtoshkola.semenovec@mail.ru</a
+        >
+
+        <p class="section-contacts-vk-text">Наша группа</p>
+        <a class="section-contacts-vk-link" href="#"
+          ><img
+            class="section-contacts-vk-img"
+            src="img/logo-vk.png"
+            alt="Логотип Вконтакте"
+        /></a>
+
+        <a class="section-contacts-viber-link" href="#"
+          >Написать в <span class="section-contacts-viber-text">Viber</span></a
+        >
+
+        <p class="section-contacts-time-heading">Режим работы:</p>
+        <p class="section-contacts-time">
+          понедельник-пятница 9.00-18.00 <br />
+          суббота-воскресенье 9.00-14.00
+        </p>
+
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aef99e9aec27b5735cae76b9bfc7cd11293d0dd8bcb9e66c0a0fddff55cdf814a&amp;source=constructor"
+          width="320"
+          height="480"
+          frameborder="0"
+          class="section-contacts-map"
+        ></iframe>
+
+        <p class="section-contacts-address">
+          <span class="section-contacts-address-heading">Наш адрес:</span><br />
+          г. Семёнов, ул. Чернышевского д. 6, 2 этаж
+        </p>
+      </section>
+
+      <section class="section-documents">
+        <ul class="section-documents-list">
+          <li><a href="#">Лицензия и приложение</a></li>
+          <li><a href="#">Финансово-хозяйственная деятельность</a></li>
+          <li><a href="#">Устав автошколы</a></li>
+          <li><a href="#">Локальные акты</a></li>
+          <li><a href="#">Платные образовательные услуги</a></li>
+          <li><a href="#">Свидетельство о гос. регистрации</a></li>
+          <li><a href="#">Отчет о результатах самообследования</a></li>
+          <li><a href="#">Основная образовательная программа</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="section-footer">
+      <a class="section-footer-home" href="#">#наглавную</a>
+      <p class="section-footer-school-name">ЧПОУ Автошкола «Семёновец»</p>
+      <p class="section-footer-text">
+        Дата создания:<br />
+        06 мая 2013года <br />Директор: Старушонкова Вера Андреевна
+        <br />Местонахождения:<br />
+        606650 Нижегородская обл., г.Семенов, ул. Чернышевского,д.6
+      </p>
+
+      <ul class="section-footer-tels">
+        <li><a href="tel:+79040428174">+7 904 042 81 74</a></li>
+        <li><a href="tel:+79108766368">+7 910 876 63 68</a></li>
+      </ul>
+
+      <p class="section-footer-work-time">
+        <span class="section-footer-work-time-subheading">Режим работы:</span
+        ><br />
+        понедельник-пятница 9.00-18.00<br />
+        суббота-воскресенье 9.00-14.00
+      </p>
+    </footer>
+
+    <div class="popup">
+      <div class="popup-content">
+        <h2 class="popup-heading">Заявка на обучение</h2>
+        <form method="post" action="http://127.0.0.1:3000/" class="popup-form">
+          <input
+            type="text"
+            name="name"
+            id=""
+            placeholder="Имя"
+            required
+            class="popup-input"
+          />
+          <input
+            type="tel"
+            name="phone"
+            id=""
+            placeholder="Телефон"
+            required
+            class="popup-input"
+          />
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="E-mail"
+            class="popup-input popup-last-input"
+          />
+          <fieldset class="popup-fieldset">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              required
+              class="popup-checkbox"
+            />
+            <label for="checkbox" class="popup-label">
+              Я принимаю политику обработки персональных данных
+            </label>
+          </fieldset>
+          <button type="submit" name="submit" class="popup-submit-btn">
+            <span>Отправить</span> <span class="popup-arr">&rarr;</span>
+          </button>
+        </form>
+      </div>
+      <button type="button" class="popup-button-close-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="popup-button-close-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
