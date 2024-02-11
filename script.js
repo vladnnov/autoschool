@@ -22,6 +22,13 @@ const swiper = new Swiper(".swiper-1", {
     prevEl: ".swiper-button-prev",
   },
 
+  breakpoints: {
+    834: {
+      slidesPerView: 3,
+      spaceBetween: 21,
+    },
+  },
+
   // And if we need scrollbar
   // scrollbar: {
   //   el: ".swiper-scrollbar",
@@ -39,16 +46,17 @@ const swiper2 = new Swiper(".swiper-2", {
     el: ".swiper-pagination-2",
   },
 
+  breakpoints: {
+    834: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
 });
 
 const popupButtonClose = document.querySelector(".popup-button-close-btn");

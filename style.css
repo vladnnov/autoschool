@@ -106,6 +106,10 @@ body {
   margin-bottom: 1.75rem;
 }
 
+.header-heading-br {
+  display: none;
+}
+
 .header-cta-button {
   display: block;
   padding: 0.875rem 0.625rem;
@@ -221,7 +225,7 @@ body {
   line-height: 1.4;
   color: #141e30;
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 50%;
   text-align: center;
   z-index: 1;
@@ -373,8 +377,9 @@ body {
 
 .section-cta-img {
   display: block;
-  width: 100%;
+  width: 19.5rem;
   height: auto;
+  margin: 0 auto;
 }
 
 /*********************************************************************************/
@@ -546,6 +551,15 @@ body {
   background-image: linear-gradient(to right, #141e30, #222e44);
 }
 
+.section-documents-heading {
+  font-size: 1.125rem;
+  color: #fff;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 3.4375rem;
+  text-align: center;
+}
+
 .section-documents-list {
   list-style: none;
   display: flex;
@@ -585,6 +599,7 @@ body {
   background-image: linear-gradient(to right, #141e30, #222e44);
   color: #fff;
   font-size: 0.875rem;
+  border-top: 1px solid #d9d9d9;
 }
 
 .section-footer-home:link,
@@ -815,14 +830,358 @@ body {
 
 @media (min-width: 52.125rem) {
   .header {
-    background-image: none;
-    background-color: red;
+    padding: 1.625rem 2.75rem;
   }
-}
 
-@media (min-width: 90rem) {
-  .header {
-    background-image: none;
-    background-color: yellow;
+  .header-top {
+    margin-bottom: 7.9375rem;
+  }
+
+  .header-logo {
+    width: 10.625rem;
+    height: 2.625rem;
+  }
+
+  .header-nav {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    flex-shrink: 1;
+  }
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 0.9375rem;
+    justify-content: end;
+  }
+
+  .header-nav-list a {
+    font-size: 0.875rem;
+  }
+
+  .header-nav-button {
+    display: none;
+  }
+
+  .header-heading {
+    font-size: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .header-heading-br {
+    display: inline-block;
+  }
+
+  .header-cta-button {
+    font-size: 0.875rem;
+    padding: 0.875rem 0.8125rem;
+    margin-bottom: 9.375rem;
+  }
+
+  .header-img {
+    right: 0.5rem;
+    bottom: 1rem;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION FEATURES  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-features {
+    padding-top: 2.75rem;
+    padding-bottom: 3rem;
+    padding-left: 2.8125rem;
+    padding-right: 2.8125rem;
+  }
+
+  .section-features-list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .section-features-text {
+    text-align: center;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION TEAM  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-team {
+    padding: 3.8125rem 2.75rem 3rem;
+  }
+
+  .section-team-heading {
+    font-size: 1.25rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .section-team-slider-item-name {
+    font-size: 1rem;
+    bottom: 45%;
+  }
+
+  .section-team-slider-item-job {
+    font-size: 0.8rem;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION PRICING  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-pricing {
+    padding: 2.6875rem 2.75rem 4.625rem;
+  }
+
+  .section-pricing-heading {
+    font-size: 1.25rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .section-pricing-list {
+    gap: 1.5625rem;
+    font-size: 0.875rem;
+    margin-bottom: 2.9375rem;
+  }
+
+  .section-pricing-list-item {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    border-bottom: 0;
+    column-gap: 1.25rem;
+  }
+
+  .section-pricing-item-description {
+    grid-column: 1 / 8;
+  }
+
+  .section-pricing-item-price {
+    grid-column: 8 / 10;
+  }
+
+  .section-pricing-subheading {
+    margin-top: 3.3125rem;
+    margin-bottom: 2.1875rem;
+    grid-column: 1/-1;
+  }
+
+  .section-pricing-small-text {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION CTA  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-cta {
+    padding: 2.5rem 2.75rem 2.3125rem;
+    background-image: linear-gradient(to right, #141e30, #222e44);
+    position: relative;
+  }
+
+  .section-cta-text {
+    font-size: 1.25rem;
+  }
+
+  .section-cta-br {
+    display: none;
+  }
+
+  .section-cta-text:nth-child(1) {
+    margin-bottom: 0.3125rem;
+  }
+
+  .section-cta-text:nth-child(2) {
+    margin-bottom: 1.625rem;
+  }
+
+  .section-cta-button {
+    padding: 0.8125rem;
+    margin-bottom: 6.0625rem;
+  }
+
+  .section-cta-undertext {
+    font-size: 1.125rem;
+  }
+
+  .section-cta-img {
+    position: absolute;
+    width: 18.375rem;
+    height: auto;
+    bottom: 0;
+    right: 2.75rem;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION TESTIMONIALS  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-testimonials {
+    padding: 2.4375rem 2.75rem 2.875rem;
+  }
+
+  .section-testimonials-heading {
+    font-size: 1.25rem;
+    margin-bottom: 3.1875rem;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION CONTACTS  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-contacts {
+    padding: 2.75rem 2.75rem 3.125rem;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .section-contacts-left {
+    grid-column: 1 / 5;
+  }
+
+  .section-contacts-heading {
+    font-size: 1.25rem;
+    margin-bottom: 4.3125rem;
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  .section-contacts-tels a:link,
+  .section-contacts-tels a:visited {
+    font-size: 1rem;
+  }
+
+  .section-contacts-mail:link,
+  .section-contacts-mail:visited {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 1.875rem;
+  }
+
+  .section-contacts-vk-text {
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-contacts-vk-link {
+    margin-bottom: 2rem;
+  }
+
+  .section-contacts-viber-link {
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .section-contacts-time-heading {
+    font-size: 1rem;
+  }
+
+  .section-contacts-time {
+    font-size: 1rem;
+  }
+
+  .section-contacts-map {
+    grid-column: 5 / -1;
+    grid-row: 2;
+    height: 23rem;
+  }
+
+  .section-contacts-address {
+    font-size: 1rem;
+    grid-column: 5 / -1;
+    grid-row: 3;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION DOCUMENTS  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-documents {
+    padding: 3.125rem 2.75rem 6.4375rem;
+  }
+
+  .section-documents-heading {
+    font-size: 1.25rem;
+    margin-bottom: 4.1875rem;
+  }
+
+  .section-documents-list {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 1.25rem;
+    align-items: stretch;
+  }
+
+  .section-documents-list li {
+    grid-column: span 5;
+    display: flex;
+  }
+
+  .section-documents-list a {
+    display: flex;
+    align-items: center;
+  }
+
+  /*********************************************************************************/
+  /*********************************************************************************/
+  /* SECTION FOOTER  */
+  /*********************************************************************************/
+  /*********************************************************************************/
+
+  .section-footer {
+    padding: 2.5rem 2.75rem 1.5rem;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 1.25rem;
+  }
+
+  .section-footer-left {
+    grid-column: 1 / 6;
+  }
+
+  .section-footer-right {
+    grid-column: 6 / -1;
+    text-align: right;
+  }
+
+  .section-footer-home:link,
+  .section-footer-home:visited {
+    line-height: 1.6;
+    margin-bottom: 0.3125rem;
+  }
+
+  .section-footer-school-name {
+    margin-bottom: 1rem;
+  }
+
+  .section-footer-tels {
+    margin-bottom: 0.8125rem;
+  }
+
+  .section-footer-work-time {
+    line-height: 1.4;
+  }
+
+  .section-footer-br {
+    display: none;
   }
 }
