@@ -828,7 +828,7 @@ body {
   height: 100%;
 }
 
-@media (min-width: 52.125rem) {
+@media (min-width: 48rem) {
   .header {
     padding: 1.625rem 2.75rem;
   }
@@ -1054,6 +1054,10 @@ body {
     grid-column: 1 / 5;
   }
 
+  .section-contacts-right {
+    grid-column: 5 / -1;
+  }
+
   .section-contacts-heading {
     font-size: 1.25rem;
     margin-bottom: 4.3125rem;
@@ -1068,8 +1072,8 @@ body {
 
   .section-contacts-mail:link,
   .section-contacts-mail:visited {
-    font-size: 1rem;
-    display: block;
+    font-size: 0.8rem;
+    display: flex;
     margin-bottom: 1.875rem;
   }
 
