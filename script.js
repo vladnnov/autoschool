@@ -18,14 +18,19 @@ const swiper = new Swiper(".swiper-1", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-1",
+    prevEl: ".swiper-button-prev-1",
   },
 
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 21,
+    },
+
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 65,
     },
   },
 
@@ -40,6 +45,7 @@ const swiper2 = new Swiper(".swiper-2", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
+  centeredSlides: true,
 
   // If we need pagination
   pagination: {
@@ -48,14 +54,19 @@ const swiper2 = new Swiper(".swiper-2", {
 
   breakpoints: {
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20,
+    },
+
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 24,
     },
   },
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
   },
 });
 
