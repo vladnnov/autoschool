@@ -45,7 +45,6 @@ const swiper2 = new Swiper(".swiper-2", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
-  centeredSlides: true,
 
   // If we need pagination
   pagination: {
@@ -55,12 +54,13 @@ const swiper2 = new Swiper(".swiper-2", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
 
     1440: {
       slidesPerView: 3,
       spaceBetween: 24,
+      centeredSlides: true,
     },
   },
   // Navigation arrows
