@@ -42,7 +42,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(20, 30, 48, 0.97);
+  background-color: rgba(20, 30, 48, 0.99);
   z-index: 100;
   top: 0;
   left: 0;
@@ -75,9 +75,39 @@ body {
 }
 
 .header-nav-button {
+  margin-top: -0.5rem;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+  position: relative;
+  z-index: 10000000;
+  user-select: none;
+  padding: 1rem;
+}
+
+.burger-line {
+  display: inline-block;
+  height: 1px;
+  width: 1.5rem;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.opened .burger-line-1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.opened .burger-line-2 {
+  opacity: 0;
+}
+
+.opened .burger-line-3 {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .header-nav-button-icon {
@@ -86,22 +116,6 @@ body {
   color: #fff;
   position: relative;
   z-index: 999;
-}
-
-.header-nav-button-icon--open {
-  display: inline-block;
-}
-
-.opened .header-nav-button-icon--open {
-  display: none;
-}
-
-.header-nav-button-icon--close {
-  display: none;
-}
-
-.opened .header-nav-button-icon--close {
-  display: inline-block;
 }
 
 .header-heading {
@@ -922,7 +936,8 @@ body {
     justify-content: end;
   }
 
-  .header-nav-list a {
+  .header-nav-list a:link,
+  .header-nav-list a:visited {
     font-size: 0.875rem;
   }
 
@@ -1073,11 +1088,11 @@ body {
 
   .section-team-slider-item-name {
     font-size: 1rem;
-    bottom: 45%;
+    bottom: 4%;
   }
 
   .section-team-slider-item-job {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   /*********************************************************************************/
@@ -1331,7 +1346,7 @@ body {
   .section-footer-right {
     grid-column: 6 / -1;
     text-align: right;
-    align-self: end;
+    align-self: start;
   }
 
   .section-footer-home:link,
@@ -1345,7 +1360,7 @@ body {
   }
 
   .section-footer-tels {
-    margin-bottom: 0.8125rem;
+    margin-bottom: 1.5rem;
   }
 
   .section-footer-work-time {
@@ -1364,7 +1379,7 @@ body {
 
   .popup {
     background-color: transparent;
-    opacity: 0.97;
+    opacity: 1;
   }
 
   .popup-content {
@@ -1453,11 +1468,12 @@ body {
     }
 
     .header-nav-list {
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
-    .header-nav-list a {
-      font-size: 1rem;
+    .header-nav-list a:link,
+    .header-nav-list a:visited {
+      font-size: 1.0625rem;
       transition: all 0.2s;
     }
 
@@ -1814,6 +1830,10 @@ body {
       font-size: 1.125rem;
     }
 
+    .section-contacts-viber-text {
+      font-size: 1.125rem;
+    }
+
     .section-contacts-time-heading {
       font-size: 1.125rem;
     }
@@ -1906,7 +1926,8 @@ body {
     }
 
     .section-footer-tels {
-      margin-bottom: 1.0625rem;
+      padding-top: 1rem;
+      margin-bottom: 1.5rem;
     }
 
     /*********************************************************************************/
