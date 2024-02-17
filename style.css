@@ -1089,11 +1089,28 @@ body {
 
   .section-team-slider-item-name {
     font-size: 1rem;
-    bottom: 4%;
+    bottom: 40%;
   }
 
   .section-team-slider-item-job {
     font-size: 1rem;
+  }
+
+  .swiper-button-prev-1,
+  .swiper-button-next-1 {
+    display: block;
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    top: 85%;
+  }
+
+  .swiper-button-prev-1 {
+    left: 1rem;
+  }
+
+  .swiper-button-next-1 {
+    right: 1rem;
   }
 
   /*********************************************************************************/
@@ -1211,6 +1228,23 @@ body {
   .section-testimonials-heading {
     font-size: 1.25rem;
     margin-bottom: 3.1875rem;
+  }
+
+  .swiper-button-prev-2,
+  .swiper-button-next-2 {
+    display: block;
+    color: #141e30;
+    position: absolute;
+    z-index: 10;
+    top: 212rem;
+  }
+
+  .swiper-button-prev-2 {
+    left: 1rem;
+  }
+
+  .swiper-button-next-2 {
+    right: 1rem;
   }
 
   /*********************************************************************************/
@@ -1585,11 +1619,7 @@ body {
 
     .swiper-button-prev-1,
     .swiper-button-next-1 {
-      display: block;
-      color: #fff;
-      position: absolute;
-      z-index: 10;
-      top: 20rem;
+      top: 23rem;
     }
 
     .swiper-button-prev-1 {
@@ -1723,10 +1753,6 @@ body {
 
     .swiper-button-prev-2,
     .swiper-button-next-2 {
-      display: block;
-      color: #141e30;
-      position: absolute;
-      z-index: 10;
       top: 25rem;
     }
 
