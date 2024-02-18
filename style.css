@@ -86,6 +86,7 @@ body {
   z-index: 10000000;
   user-select: none;
   padding: 1rem;
+  transform: translateX(1rem);
 }
 
 .burger-line {
