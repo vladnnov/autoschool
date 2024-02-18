@@ -1096,23 +1096,6 @@ body {
     font-size: 1rem;
   }
 
-  .swiper-button-prev-1,
-  .swiper-button-next-1 {
-    display: block;
-    color: #fff;
-    position: absolute;
-    z-index: 10;
-    top: 85%;
-  }
-
-  .swiper-button-prev-1 {
-    left: 1rem;
-  }
-
-  .swiper-button-next-1 {
-    right: 1rem;
-  }
-
   /*********************************************************************************/
   /*********************************************************************************/
   /* SECTION PRICING  */
@@ -1228,23 +1211,6 @@ body {
   .section-testimonials-heading {
     font-size: 1.25rem;
     margin-bottom: 3.1875rem;
-  }
-
-  .swiper-button-prev-2,
-  .swiper-button-next-2 {
-    display: block;
-    color: #141e30;
-    position: absolute;
-    z-index: 10;
-    top: 212rem;
-  }
-
-  .swiper-button-prev-2 {
-    left: 1rem;
-  }
-
-  .swiper-button-next-2 {
-    right: 1rem;
   }
 
   /*********************************************************************************/
@@ -1483,6 +1449,101 @@ body {
     color: #141e30;
   }
 
+  @media (min-width: 64rem) {
+    .header-nav-list a:link,
+    .header-nav-list a:visited {
+      font-size: 0.9375rem;
+    }
+
+    .section-team-slider-item-name {
+      bottom: 42%;
+    }
+
+    .section-team-slider-item-job {
+      font-size: 0.875rem;
+    }
+
+    .section-team-container {
+      width: 64rem;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .swiper-button-prev-1,
+    .swiper-button-next-1 {
+      display: block;
+      color: #fff;
+      position: absolute;
+      z-index: 10;
+      top: 52%;
+    }
+
+    .swiper-button-prev-1 {
+      left: -4rem;
+    }
+
+    .swiper-button-next-1 {
+      right: -4rem;
+    }
+
+    .section-testimonials-container {
+      width: 55.875rem;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .swiper-button-prev-2,
+    .swiper-button-next-2 {
+      display: block;
+      color: #141e30;
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+    }
+
+    .swiper-button-prev-2 {
+      left: -2rem;
+    }
+
+    .swiper-button-next-2 {
+      right: -2rem;
+    }
+
+    .swiper-2 .swiper-slide {
+      display: flex;
+      align-items: center;
+    }
+
+    .swiper-2 .swiper-slide-active .section-testimonials-slider-img {
+      align-self: center !important;
+      transform: scale(1.8) translateY(1rem);
+    }
+
+    .swiper-2 .swiper-slide-active {
+      z-index: 20;
+    }
+
+    .swiper-2 .swiper-slide-next .section-testimonials-slider-img {
+      filter: blur(2px) !important;
+      align-self: center !important;
+      transform: scale(0.65);
+    }
+
+    .swiper-2 .swiper-slide-prev .section-testimonials-slider-img {
+      filter: blur(2px) !important;
+      align-self: center !important;
+      transform: scale(0.65);
+    }
+
+    .swiper-2 {
+      height: 35rem !important;
+    }
+
+    .swiper-wrapper-2 {
+      height: 35rem !important;
+    }
+  }
+
   @media (min-width: 90rem) {
     .header {
       padding: 1.75rem 10.3125rem;
@@ -1619,7 +1680,7 @@ body {
 
     .swiper-button-prev-1,
     .swiper-button-next-1 {
-      top: 23rem;
+      top: 55%;
     }
 
     .swiper-button-prev-1 {
@@ -1742,7 +1803,7 @@ body {
 
     .section-testimonials-container {
       position: relative;
-      max-width: 68.75rem;
+      width: 68.75rem;
       margin: 0 auto;
     }
 
