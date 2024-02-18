@@ -1267,8 +1267,9 @@ body {
     margin-bottom: 2rem;
   }
 
-  .section-contacts-viber-link {
-    margin-bottom: 2.5rem;
+  .section-contacts-viber-link:link,
+  .section-contacts-viber-link:visited {
+    margin-bottom: 2.9rem;
     font-size: 1rem;
   }
 
@@ -1828,11 +1829,11 @@ body {
     }
 
     .swiper-2 {
-      height: 35rem !important;
+      height: 28rem !important;
     }
 
     .swiper-wrapper-2 {
-      height: 35rem !important;
+      height: 28rem !important;
     }
 
     .swiper-2 .swiper-slide {
