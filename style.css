@@ -557,12 +557,13 @@ body {
   margin-bottom: 3.6875rem;
   text-decoration: none;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
 }
 
 .section-contacts-viber-link:hover,
 .section-contacts-viber-link:active {
   color: #ff2e00;
+  font-size: 1rem;
 }
 
 .section-contacts-viber-text {
@@ -1916,7 +1917,8 @@ body {
       margin-bottom: 3.4375rem;
     }
 
-    .section-contacts-viber-link {
+    .section-contacts-viber-link:link,
+    .section-contacts-viber-link:visited {
       margin-bottom: 2.125rem;
       font-size: 1.125rem;
     }
